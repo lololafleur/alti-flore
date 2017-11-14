@@ -1,0 +1,53 @@
+HTTrack3.48-24 launched on Tue, 14 Nov 2017 12:06:13 at http://www.alti-flore.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w http://www.alti-flore.com -O "/home/stephane/websites/altiflore" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:06:13	Warning: 	Note: due to www.alti-flore.com remote robots.txt rules, links beginning with these path will be forbidden: /sitemap/, /docs/FonctionsCteky.php* (see in the options to disable this)
+12:08:45	Error: 	"Not Found" (404) at link lh3.googleusercontent.com/ (from https://plus.google.com/112893069581964458484)
+12:08:45	Error: 	"Not Found" (404) at link ssl.gstatic.com/ (from https://plus.google.com/112893069581964458484)
+12:08:46	Error: 	"Not Found" (404) at link www.gstatic.com/ (from https://plus.google.com/112893069581964458484)
+12:08:47	Error: 	"Not Found" (404) at link plus.url.google.com/ (from https://plus.google.com/112893069581964458484)
+12:08:47	Warning: 	Found for cdn.ampproject.org/robots.txt
+12:08:47	Warning: 	Redirected link is identical because of 'URL Hack' option: cdn.ampproject.org/robots.txt and https://cdn.ampproject.org/robots.txt
+12:08:47	Warning: 	Warning moved treated for cdn.ampproject.org/robots.txt (real one is https://cdn.ampproject.org/robots.txt)
+12:08:47	Warning: 	Found for cdn.ampproject.org/
+12:08:47	Warning: 	Redirected link is identical because of 'URL Hack' option: cdn.ampproject.org/ and https://cdn.ampproject.org/
+12:08:47	Warning: 	File has moved from cdn.ampproject.org/ to https://cdn.ampproject.org/
+12:08:47	Warning: 	Warning: store text/html without scan: /home/stephane/websites/altiflore/cdn.ampproject.org/index.html
+12:08:47	Warning: 	Found for https://plus.google.com/?lfhs=2
+12:08:47	Warning: 	File has moved from https://plus.google.com/?lfhs=2 to https://plus.google.com/discover
+12:08:47	Warning: 	Warning: store text/html without scan: /home/stephane/websites/altiflore/plus.google.com/index012f.html
+12:08:47	Warning: 	Warning: store text/html without scan: /home/stephane/websites/altiflore/plus.google.com/+AltiFloreChabottes.html
+12:08:47	Error: 	"Not Found" (404) at link https://plus.google.com/android-app://com.google.android.apps.plus/https/plus.google.com/+AltiFloreChabottes (from https://plus.google.com/112893069581964458484)
+12:08:47	Error: 	"Not Found" (404) at link https://plus.google.com/ios-app://447119634/gplus/plus.google.com/+AltiFloreChabottes (from https://plus.google.com/112893069581964458484)
+12:09:44	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://apis.google.com/js/api.js
+12:09:46	Warning: 	HTML file (13086 bytes) retransferred due to lack of cache: www.alti-flore.com/contacter-alti-flore.142829.html
+12:09:47	Warning: 	HTML file (15289 bytes) retransferred due to lack of cache: www.alti-flore.com/info-legales-de-www-alti-flore-com.142829.html
+12:09:48	Warning: 	HTML file (416 bytes) retransferred due to lack of cache: cdn.ampproject.org/
+12:09:48	Warning: 	Found for cdn.ampproject.org/
+12:09:48	Warning: 	Redirected link is identical because of 'URL Hack' option: cdn.ampproject.org/ and https://cdn.ampproject.org/
+12:09:48	Warning: 	File has moved from cdn.ampproject.org/ to https://cdn.ampproject.org/
+12:09:48	Warning: 	Warning: store text/html without scan: /home/stephane/websites/altiflore/cdn.ampproject.org/index.html
+12:09:48	Warning: 	HTML file (426 bytes) retransferred due to lack of cache: https://plus.google.com/?lfhs=2
+12:09:49	Warning: 	Found for https://plus.google.com/?lfhs=2
+12:09:49	Warning: 	File has moved from https://plus.google.com/?lfhs=2 to https://plus.google.com/discover
+12:09:49	Warning: 	Warning: store text/html without scan: /home/stephane/websites/altiflore/plus.google.com/index012f.html
+12:09:49	Warning: 	HTML file (481935 bytes) retransferred due to lack of cache: https://plus.google.com/+AltiFloreChabottes
+12:10:28	Warning: 	Retry after error -4 (Interrupted transfer) at link https://plus.google.com/+AltiFloreChabottes (from https://plus.google.com/112893069581964458484)
+12:10:28	Warning: 	HTML file (12125 bytes) retransferred due to lack of cache: www.alti-flore.com/article-produits-glace.142829.7483.html
+12:10:30	Warning: 	HTML file (10314 bytes) retransferred due to lack of cache: www.alti-flore.com/article-videos.142829.6952.html
+12:10:31	Warning: 	HTML file (11354 bytes) retransferred due to lack of cache: www.alti-flore.com/realisations-et-references-de-alti-flore.142829.html
+12:10:34	Error: 	"File not found" (404) at link www.alti-flore.com/images/professionnel/142829/image8.png (from www.alti-flore.com/images/professionnel/142829/e-commerce4.css)
+12:10:35	Error: 	"File not found" (404) at link www.alti-flore.com/images/professionnel/142829/image5.png (from www.alti-flore.com/images/professionnel/142829/e-commerce4.css)
+12:10:36	Error: 	"File not found" (404) at link www.alti-flore.com/images/professionnel/142829/image4.png (from www.alti-flore.com/images/professionnel/142829/e-commerce4.css)
+12:10:36	Warning: 	HTML file (481935 bytes) retransferred due to lack of cache: https://plus.google.com/+AltiFloreChabottes
+12:10:37	Warning: 	Retry after error -4 (Interrupted transfer) at link https://plus.google.com/+AltiFloreChabottes (from https://plus.google.com/112893069581964458484)
+12:10:37	Warning: 	HTML file (481935 bytes) retransferred due to lack of cache: https://plus.google.com/+AltiFloreChabottes
+12:10:38	Error: 	"Interrupted transfer" (-4) after 2 retries at link https://plus.google.com/+AltiFloreChabottes (from https://plus.google.com/112893069581964458484)
+
+HTTrack Website Copier/3.48-24 mirror complete in 4 minutes 25 seconds : 161 links scanned, 153 files written (6412986 bytes overall) [6830174 bytes received at 25774 bytes/sec], 1558257 bytes transferred using HTTP compression in 60 files, ratio 28%, 1.8 requests per connection
+(10 errors, 32 warnings, 0 messages)

@@ -1,0 +1,697 @@
+/*Balise général*/
+body { width: auto !important;  background-image: none;}
+table,canvas, tbody, td,tr, li, blockquote, code, pre,  input, iframe, embed, video, p, #mapsearch{max-width: 100% !important; margin: auto; background-image: none;}
+a img {border: 0 !important;}
+code, pre, samp {white-space: pre-line !important;}
+ul {margin:0; padding:0;}
+
+body{-webkit-text-size-adjust:none;-webkit-appearance: none; -moz-appearance: none; margin:auto;}
+fieldset {border-radius: 10px;}
+legend {font-weight:bold;}
+blockquote{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 20px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 1.1em;
+    font-style: italic;
+}
+blockquote:before {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    content: open-quote;
+}
+blockquote:after {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 0.25em;
+    vertical-align: -0.6em;
+    content: close-quote;
+}
+
+q{font-style:italic; display:block;}
+/*Gestion des images */
+#site_page_texte > img,#site_page_texte > p > img, #site_page_texte > p > a > img, img.pleinelargeurmobile, .image_produit_boutique {height: auto; width:100%;  float: none !important; margin: 0 !important; }
+
+.passurmobile{display:none;}
+.taillerellemobile, img.passurecran { max-width: 100% ; height: auto; width:auto;}
+.tailleproportionnellemobile { max-width: 30% ; height: auto; width:auto;}
+
+
+/*Header*/
+#site_entete{
+    background-color: #FFF;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+}
+
+#site_entete #site_logo > a {text-decoration: none;}
+#site_entete #site_logo > a > span {font-size:16px;line-height: 22px; color:#FFF;}
+#site_entete span.fn {text-transform : capitalize; color: #000; float: left;}
+#site_entete .imagelogo.nomsite{
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    max-width: 50%;
+    overflow: hidden;
+    vertical-align:middle;
+    display:inline-block;
+}
+
+#site_entete #site_adresse .ville{
+    display: none;
+}
+
+#site_entete #site_adresse .ville_mobile {
+    text-transform : capitalize;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    left: 0;
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+ /* Entete en version mobile */
+#site_entete #numerotelephone_mobile{
+    position: absolute;
+    top: 5px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+    right: 50px;
+}
+#site_entete #numerotelephone_mobile a{
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    background:none;
+    color: #000;
+}
+
+#site_entete #numerotelephone_mobile a:before{
+    background-image: url('../images/tel-noir.svg');
+    display: block;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    margin: 3px auto;
+}
+#site_entete #numerotelephone_mobile a:after{
+    content: 'APPELER';
+    font-size: 0.8em;
+}
+
+
+#site_entete #site_adresse #numerotelephone .picto, #site_entete #site_adresse #numerotelephone .clicktocall, #site_entete .tel .clicktocall{
+    display: none;
+}
+#site_entete #site_adresse #contact_mobile{
+    position: absolute;
+    background-color: #2A7DB0;
+    top: 60px;
+    left: 60%;
+    width: 40%;
+    height: 40px;
+    color: #FFF;
+}
+
+#site_entete #site_adresse #contact_mobile{text-decoration: none;overflow: hidden;text-align: center;}
+#site_entete #site_adresse #contact_mobile:before{content: 'CONTACT';line-height: 40px;}
+#site_entete #site_adresse #contact_mobile:after{
+    background-image: url('../images/mail-blanc.png');
+    background-size: 20px 12px;
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+    content: '';
+    margin-left: 5px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+.imagelogo {
+    display: block;
+    height: 50px;
+    overflow:hidden;
+    margin: 5px;
+    padding: 0; float:left;
+    background-color: #FFF;
+    max-width: 190px;
+}
+
+.clicktocall {display: block; height: 20px;line-height:20px; padding: 2px 5px; float:right; clear:right;background-color: green;color: #FFF;text-decoration: none;}
+.clicktocall a {color: #FFF;text-decoration: none;}
+
+span.mob, span.fax, span.street-address, span.extended-address, span.postal-code {display:none;}
+span.locality {font-size:14px; font-weight:100;color: #EEE;}
+
+/*Menu*/
+#site_menu_page {
+    display: none;}
+#site_menu_page  {box-shadow: 1px 1px 12px #555;overflow:visible !important; float:left;width:100%; margin: 0;}
+#menuBt {
+    height: 30px; width: 30px;
+    cursor:pointer; overflow:hidden; font-weight:bold;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size:14px !important; padding: 0 3px; border-radius: 3px;;
+    background-color: #FFF;
+    background-image: linear-gradient(to right, #232323, #232323),
+    linear-gradient(to right, #232323, #232323),
+    linear-gradient(to right, #232323, #232323);
+    background-position: center 6px, center, center 22px;
+    background-repeat: no-repeat;
+    background-size: 26px 3px;
+}
+#menuBt:hover {border-color: #6B6B6B;}
+
+#site_menu_page {list-style:none;width:100%;padding-bottom:1px;z-index:800;margin-top: 100px;position: fixed;}
+#site_menu_page ul{ list-style:none;background-color: white;}
+#site_menu_page p {color:white; display:inline-block; position:absolute; right:10px;}
+#site_menu_page li > span {width:100%;}
+#site_menu_page li {color:#000;cursor:pointer;border:1px solid #eee;overflow:hidden; margin:0; font-size:14px !important;}
+
+#site_menu_page li:not(#current){background-color: #FFF;}
+#site_menu_page a {text-transform: capitalize!important;text-decoration:none; color:#333; width:100%; display:block;height:100%; padding: 10px 0 10px 10px;}
+#site_menu_page li > ul {display:none;font-size:12px;}
+div#site_menu_page ul.menuDeroulantHorizontal li > ul > li {margin:auto;font-size:11px !important; background-color:#FFF;}
+div#site_menu_page ul.menuDeroulantHorizontal li > ul > li a { background-color:#FFF; width:100%; margin-left: 5px; color: #333;}
+
+#site_menu_page li > ul > li > ul a {background-color:#8c8c8c;}
+#site_menu_page  #current{background-color:#646567 !important; }
+#current span {display:inline-block;   }
+
+#iconeMenu:after {content:"  \203A"; position:absolute; right:10px;  }
+#selectedMenu > a:first-child:after{content:"  \1601"; color:#f79609; position:absolute; right:10px; }
+#selectedMenu > span > a:after{content:"  \1601"; color:#f79609; position:absolute; right:10px; }
+/**********/
+
+/*Contenu*/
+/*General*/
+#site_page_texte hr {margin-right:10px;}
+#cartouche {font-size:1.1em !important; margin:0 0 10px;}
+#site_page_texte {margin-top:10px;}
+#site_page {padding-top: 100px;margin:0 0 20px 0; overflow:auto; width:100%;}
+#site_page p{margin:0 0 5px 0;}
+#site_page_texte > p {margin-top:5px !important;}/*decovine PA*/
+#site_page_texte {margin: 0 15px 20px 15px;}
+#site_page_texte h4 {margin-left:0 !important;}
+#site_page_texte td {margin-left:0 !important;}
+#site_page_texte table {width:100% !important; height:auto !important; margin-left:0 !important;table-layout:fixed;}
+#site_page_texte p strong img {margin:5px;}
+#site_page_texte > img {margin-left:0 !important; /*lisa celeste*/}
+/*Titre*/
+#site_page h3{margin-bottom:5px;}
+
+/* Police */
+#site_contenu #site_page_texte h1 {font-size:1.3em; line-height: 1.3em;}
+#site_contenu #site_page_texte h2 {font-size:1.2em; line-height: 1.2em;}
+#site_contenu #site_page_texte h3 {font-size:1.1em; line-height: 1.2em;}
+#site_contenu #site_page_texte h4 {font-size:1em; line-height: 1em;}
+#site_page_texte  p {font-size:1em ; line-height: 21px;margin:0 0 5px 0;}
+#site_page_texte span {font-size:1em;}
+#site_page_texte #miniature span{font-size: .8em;}
+#site_page_texte ul {margin: 10px 0; list-style-position: inside;}
+#site_page_texte li {padding-left: 10px;font-size:1em;line-height: 21px;}
+#site_page_texte .message {font-size:1em ;}
+
+.colonne_demi, .colonne_tiers,.colonne_2tiers, .colonne_quart, .colonne_2quart, .colonne_3quart, .bloc_demi, .bloc_tiers {text-align:center;}
+
+/*Formulaire*/
+#site_page_texte form ::-webkit-input-placeholder {color: #BBB;}
+#site_page_texte form ::-moz-placeholder {color: #BBB;}
+#site_page_texte form :-ms-input-placeholder {color: #BBB;}
+#site_page_texte label {font-size: 0.9em;}
+#site_page_texte .champradio label {font-size: 1.7em;}
+#site_page_texte .radio label {font-size: 1em;}
+#site_page_texte .radio input {display: inline-block;vertical-align: middle;margin: 0 5px;}
+#site_page_texte form p {font-size:10px;margin-left:10px;margin-right:10px;}
+.champradio {display:block; font-size:8px;}
+.champradio input[type=radio]{width:20px !important; height:20px !important; background-color: #eeeeee;}
+#AJOUTPARTENAIRE table {width:100%;}
+#site_page_texte form {counter-reset:titre; width:100%; margin: 0;}
+form textarea,form select, form input[type=text] {width:100% !important;}
+#site_page_texte legend{counter-increment: titre;padding: 8px 0 10px 1px;display: block;width: 100%;}
+#site_page_texte legend:before{content : counter(titre) ' -';color:black;margin-right: 5px;font-size:15px !important;}
+#site_page_texte fieldset   {border:none; margin:10px 0 0 0;-webkit-padding-start:10px; -webkit-padding-end:10px;padding: 0;}
+#site_page_texte input[type=text],#site_page_texte input[type=email], #site_page_texte input[type=tel], #site_page_texte input[type=number],
+#site_page_texte input[type=url], #site_page_texte input[type=date], #site_page_texte input[type=password], #site_page_texte select {
+    text-indent:10px;
+    width:100% !important;
+    height:30px;
+    background-color: #eeeeee;
+    margin-bottom:10px;
+    font-size:14px;
+    border: none;
+    color: #333;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#site_page_texte select{border: none;}
+#site_page_texte select option{color: #333;}
+/* Div inverse */
+#site_page_texte .inverse{margin-left: -15px;margin-right: -15px;}
+
+div.form-group div.radio, div.form-group div.checkbox {display:inline-block;line-height: 30px;}
+label.libelleformulaire {line-height: 30px;padding-right: 10px;}
+#site_page_texte textarea {padding: 10px;box-sizing: border-box;border: none;height:100px !important;width:100% !important; font-size:14px !important; background-color: #eeeeee;  margin-left:auto; margin-right:auto;font-family: inherit;  }
+#site_page_texte input[type=submit]{-webkit-appearance: none;border:none; cursor:pointer; font-size:18px !important;font-weight:bold; width:85% !important; height:40px; padding:0 20px 0 10px; margin-left:auto; margin-right:auto; display:block;background-color: green;color: #FFF;}
+#site_page_texte input[type=submit]:hover {-webkit-appearance: none; background-color: #FF9609;}
+.textecentre {width:100%;}
+.boutonsubmit {width:80%;}
+.message {border-top: 1px solid black; border-bottom: 1px solid black; padding:5px 0; margin:0 10px; font-style:italic; font-weight:bold;}
+#Form, #form_client {width:97%;}
+
+/*Tableau*/
+#site_page_texte fieldset table {width:100%;}
+#site_page_texte table:not(.beautableau) td {float:left; clear:both; margin-left:10px;width:100%;}
+#site_page_texte table:not(.beautableau) fieldset td {width:100%; }
+
+table.beautableau {border: 1px solid #000000;border-collapse: collapse; width: 100%;}
+table.beautableau  th {border: thin solid #000000;padding: 5px;font-weight: 900;text-align: center;}
+table.beautableau td {border: thin solid #000000;padding: 5px;text-align: center;}
+table.beautableau caption {font-size: 1.6em;padding: 10px;font-weight: 900;}
+table:not(.beautableau) tbody td{max-width: 100% !important; max-height: 100% !important; margin-right:20px;}
+table:not(.beautableau) tbody tr td p {width: 100% !important;}
+
+/*Video*/
+#site_page object, #site_page video, #site_page embed{max-width:100% !important; max-height:100% !important; width:auto !important; height:auto !important;}
+
+/*E-commerce*/
+/*Général*/
+#boutique, #boutique form {margin:0 !important;}
+#entete_boutique a{text-decoration: none;}
+#entete_boutique {
+    background-color: #FFF;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 0 0 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+    width:100%;
+    top: 60px;
+    position: absolute;
+    height: 40px;
+}
+#entete_boutique > div > a{padding: 10px 0;position: relative;}
+#boutique input[type=submit]{font-size:14px !important;}
+
+.panier {
+    background-color: #333;
+    display:inline-block;
+    position: absolute;
+    width:50% !important;
+    height: 40px;
+    text-align:center;
+}
+
+.panier a {color:#FFF;display:block; height:100%; width:100%;}
+.panier a .picto{display: none;}
+/* Icon du bpanier version e-commerce */
+.panier a:before {
+    background-image: url('../images/panier-blanc.png');
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+.panier img {vertical-align:middle;}
+
+.connexion {
+    display:inline-block;
+    position: absolute;
+    left: 50%;
+    width: 50% !important;
+    text-align:center;
+    height: 40px;
+    background-color: #333;
+}
+#entete_boutique .connexion a {height:20px; width:100%; padding: 10px 0;display:block; color: #FFF;}
+.connexion img {vertical-align:middle;}
+.commande {display:none;}
+.commande a{height:100%; width:100%; display:block;}
+.commande img{vertical-align:middle;}
+
+#site_page .mdp_oublie{
+    text-align: center;
+}
+
+/* Boutique */
+#cartouche {
+    overflow-y:hidden;
+    margin-bottom:0;
+}
+.un_produit_boutique {width:100% !important;border-top:2px solid #eeeeee; float:left; clear:both;height:auto; position:relative; padding:10px 0 60px 0; margin-bottom:10px;}
+.actionproduit {bottom:0; position:absolute; width:100% !important;}
+.actionproduit form {margin:0;}
+.actionproduit .infoproduit {
+    position:absolute;
+    right:0;
+    margin-top:-35px;
+    background-color:#eeeeee;
+    border-radius:0;
+    padding:5px;
+    text-decoration:none;
+    text-align:center;
+    width:80px;
+}
+
+.actionproduit .infoproduit:hover{background-color:#d2d2d2;}
+.image_produit_boutique img {display:block !important; margin-left:auto; margin-right:auto;}
+#produits_boutique form {margin:5px 0 5px 0;}
+#produits_boutique img {max-width:150px; max-height:150px;}
+#produits_boutique div {font-size:12px;}
+#produits_boutique div:first-child {margin-top:0;}
+#produits_boutique input[type=submit]{height:30px; margin: 10px auto 10px auto;}
+#cartouche_boutique {text-align:center;}
+#cartouche_boutique a {text-decoration:none; color:#f79609; width:95%; display:block; margin:0 auto 5px auto;padding: 4px 0;background-color:#eeeeee;}
+#cartouche_boutique li {color:#f79609;cursor:pointer; border-radius:10px; list-style:none; font-weight:bold; font-size:14px !important;}
+#cartouche_boutique > ul {margin:0 10px 0 0;}
+.nom_produit_boutique {display:block;color:#f79609; text-align:center; font-size:14px !important; width:100%; margin: 5px 0 5px 0;}
+.prix_produit_boutique {float:left;clear:both; font-weight:bold; font-size:18px !important; text-align:center; width:100%; color:#f79609; margin-top:5px;}
+#produits_boutique input[type=submit]:hover{background:#FF9609;}
+
+
+/* Liste des articles */
+#miniatures_boutique .une_miniature_boutique{
+    text-align: center;
+}
+
+/*Produit*/
+#ficheproduit_boutique {font-size:12px !important; text-align:center;}
+#images_ficheproduit_boutique .une_image_ficheproduit img {margin: 10px auto 0;display:block !important;}
+/*Panier*/
+#panier_boutique {font-size:11px !important;}
+#panier_boutique tr{border-bottom:1px solid #eeeeee;}
+#panier_boutique td{float:none; font-size:12px; -webkit-column-span: all;}
+#panier_boutique img{max-width:50px; max-height: 50px;}
+
+
+#panier_boutique input[type=submit] {
+    height:28px;
+    width:28px !important;
+    padding:0;
+    margin:0;
+    background:url("../images/2013-picto-ko.png") no-repeat;
+    background-size:25px;
+}
+
+#panier_boutique select {
+    font-size: 12px !important;
+}
+#panier_boutique .produit_panier select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 3px;
+    text-overflow: '';
+}
+/*#panier_boutique .produit_panier select::-ms-expand {display: none;}*/
+#panier_boutique tr:last-child  strong {float:right;}
+
+#validation-achat{margin-top:20px;}
+#validation-achat textarea{margin-bottom:20px;}
+.produit_panier strong {font-weight:normal;}
+#total_panier {height:50px;}
+#prixtotal_panier {font-size:18px !important;}
+.btnsuppression_panier p {margin-right:0 !important;}
+.prixarticle_panier {min-width:60px;}
+/*Suivi CMD*/
+#site_page_texte > td > #infos_commande {float:none;}
+#panier_boutique form p{margin-left:0;}
+#infos_commande td {float:none;}
+#Infos_produits td {float:none;}
+#infos_livraison td {float:none;}
+#infos_commande table, #Infos_produits table, #infos_livraison table {border:1px solid black; margin-bottom:10px;}
+.infos_commande, .Infos_produits, .infos_livraison {border-top:1px solid black;}
+.titre {margin-left:20px;font-size:14px !important; font-weight:bold; display:block; color:#f79609;}
+
+/*Validation panier*/
+#mail_client_commande #mail, #adresse_livraison_commande #adresse_livraison {width:95%;}
+
+/******/
+
+/*Diaporama*/
+#gallery{width:100% !important;}
+#ad-nav {display:block !important;}
+.ad-thumb-list {width:auto !important;}
+
+.ad-image-wrapper{ width:auto !important; height:200px !important;}
+.ad-image{top:0 !important; left:0 !important;margin-left:10px !important;}
+.ad-loader { top:70px !important; left:130px !important; z-index:0 !important;}
+.bloc_img_fils img {max-width:620px; width:100%; max-height:none;}
+.titreminiature {display:block;text-align:center;}
+#cartouche > #diaporama {display:block !important;}
+#cartouche > #diaporama img {display:block !important; margin:5px auto;}
+#slider {width:100% !important; background-size: cover !important; -webkit-background-size: cover; min-height:200px; height:auto !important;}
+.nivo-slice {width:100% !important; height:auto !important;}
+/*Vignette*/
+/* Diaporama vignette */
+#miniature {text-align:center;vertical-align: top;}
+.bloc_img_fils, .bloc_img_pere {
+    display: inline-block;
+    position: relative;
+    width:140px;
+    height:105px;
+    margin:5px;
+    overflow:hidden;
+}
+
+
+.bloc_img_fils a, .bloc_img_pere a {text-decoration: none;}
+.bloc_img_fils img,.bloc_img_pere img {width:140px;height:auto;min-height:105px;overflow: hidden;}
+#miniature > .bloc_img_pere a img::after {position: absolute;content:'+';font-size: 60px;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color: rgba(255,255,255,0.8);top: 10px;left: 50px;}
+
+.titreminiature {
+    display:block;
+    width: 100%;
+    height: 30px;
+    font-size: 0.8em;line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4); color: #FFF !important;
+    z-index: 10;
+}
+
+.bloc_img_fils span {margin-top:11px;}
+.bloc_img_pere span {margin-top:15px;}
+
+/*Facebook*/
+.fb_iframe_widget{position:static !important;}
+.fb_iframe_widget iframe {position:static !important; width:100% !important;}
+.fb_iframe_widget span {position:static !important; width:100% !important;}
+
+/*Paiment securisé*/
+#paiementdevispack td {float:left !important; font-size:12px; margin-left:0;}
+#paiementdevispack input[type=submit]{font-size:12px !important;}
+
+/*Livre d'or*/
+div.hreview {min-height: 70px;margin: 20px auto; max-width: 80%;}
+.livredor_etoile {display:inline;}
+.etoileavis img {width:auto !important; margin: 0 !important;display:inline-block !important;}
+#site_page_texte div.hreview img, .etoileavis img {display:inline-block !important;}
+.livredor_titre {display:inline; font-size:16px;text-transform: lowercase;text-align:center;}
+h3.livredor_titre:first-letter {text-transform: uppercase;}
+.hreview .description {clear:left;font-style:italic;font-family:Georgia,sans-serif;}
+.hreview .date {clear:left; display:block; margin-left:20px; font-style:italic; font-size:10px !important;}
+
+/* Remontée Avis Accueil */
+.etoileavis, .livredor_titre, .livredorDateEtAuteur {text-align: center;}
+.etoileavis {border-bottom: 1px solid #feb405;padding-bottom: 5px;}
+p.etoileavis img{border-radius: 0;}
+a.btnavis {display: block; max-width: 300px; padding: 5px 10px; margin: 5px auto;text-align: center;border-width: 1px;border-style: solid;border-radius:5px;text-decoration: none;}
+.avis_article h2 {text-align: center;}
+/**********/
+
+/*Footer*/
+#site_bas_page {margin:0;text-align:center; width:100% !important;padding: 10px 0;}
+#site_bas_page .lienstandard {text-decoration: none; font-size: 12px; margin: 10px 0;line-height:16px;}
+#site_bas_page .lienstandard a {text-decoration: none;padding: 5px 5px;}
+#site_bas_page  a.boutonbaspage {display:block;max-width: 60%; text-decoration: none; margin: 10px auto; height:30px; line-height:30px;border: 1px solid green;background-color: green;color: #FFF;}
+/**********/
+
+/*Non afficher*/
+#temp_slideshow, #liendevis, #myslideshow, #site_recherche, #site_baseline, #tag-motcle, #lien_entete, .titreimage,
+#site_bandeau,#site_bandeau2, #diaporama, #rappel-immediat, #site_traduction,#site_page_image1, table tbody tr.facultatif,
+#fil_ariane, #lienrecherche, #ficheproduit_boutique span.reference_produit_boutique, #site_page_image2 #temp_slideshow,
+#prestation, #bloc-label, #avis-client, #bandeau img, #tag-motcle,
+#bandeau img, #avis, .triproduits, #infoclient, .ad-nav, .ad-prev, .ad-next,
+#caroussel, .nivo-imageLink, .nivo-controlNav, .nivo-directionNav, .nivo-caption p {display: none !important;}
+/**********/
+
+
+/* Tableau des tarifs */
+.beautableau.tableauTarifs td, .beautableau.tableauTarifs th, .beautableau.tableauTarifs .titre{
+    border: thin solid #ddd;
+    text-align: left;
+}
+
+.beautableau.tableauTarifs th:last-child, .beautableau.tableauTarifs td:last-child {text-align: center;}
+.beautableau.tableauTarifs tr td.titre {text-align: left;}
+
+#Valider.validerformulaire{-webkit-appearance: none;-webkit-border-radius: 0;}
+
+/* Bouton pour accéder au formulaire (fixé sur la droite) */
+#btnToForm {
+    min-width: 0;
+    padding: 3px 5px 0 5px;
+    height: 25px;
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto!important;
+    right: 0;
+    z-index: 900;
+    background-color: #F6F6F6;
+    border: none;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: rotate(90deg) translate(50%, 50%);
+    -moz-transform: rotate(90deg) translate(50%, 50%);
+    -ms-transform: rotate(90deg) translate(50%, 50%);
+    -o-transform: rotate(90deg) translate(50%, 50%);
+    transform: rotate(90deg) translate(50%, 50%);
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+div #cartouche_articles_enfants a, div#cartouche_articles #cartouche_articles_freres a{
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/************************* Nouveau Diaporama 2017 *************************/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-slide{
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+.swiper-container .swiper-slide img{
+    height: 100%;
+    width: 100%;
+}
+.swiper-container .swiper-slide .title{
+    position: absolute;
+    width: 100%;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 4em;
+}
+
+.swiper-container .swiper-slide .swiper-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swiper-container .swiper-pagination-bullet-active {
+    background: #555;
+}
+.swiper-container .swiper-slide .subtitle{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+}
+
+.swiper-container .swiper-button, .swiper-container .swiper-button-prev, .swiper-container .swiper-button-next{
+    display: none;
+}
+
+.swiper-container.gallery-thumbs .swiper-slide{
+    background-size: cover;
+}
+
+.swiper-container.gallery-thumbs .swiper-slide img{
+    height: 50%;
+}
+.swiper-container + .swiper-container.gallery-thumbs {
+    margin-top: 10px;
+}
+
+
+#site_bas_page #avis {display:block!important;}
+#fin_site_page .avis_article{padding: 20px;}
+
+
+
+
+
+.swiper-container *[animation=slideup] {animation-duration: 3s;animation-name: slideup;}
+.swiper-container *[animation=slidedown] {animation-duration: 3s;animation-name: slidedown;}
+.swiper-container *[animation=slideupr] {animation-duration: 3s;animation-name: slideupr;}
+.swiper-container *[animation=slidedownr] {animation-duration: 3s;animation-name: slidedownr;}
+.swiper-container *[animation=slideright] {animation-duration: 3s;animation-name: slideright;}
+.swiper-container *[animation=slideleft] {animation-duration: 2s;animation-name: slideleft;}
+.swiper-container *[animation=growup] {animation-duration: 2s;animation-name: growup;}
+.swiper-container *[animation=growdown] {animation-duration: 3s;animation-name: growdown;}
+.swiper-container *[animation=fadein] {animation-duration: 3s;animation-name: fadein;}
+.swiper-container *[animation=fadeout] {animation-duration: 3s;animation-name: fadeout;}
+
+
+@keyframes slideup {
+    0% {transform: translateY(0);opacity: 1;}
+    100% {transform: translateY(-100%);opacity: 0;}
+}
+@keyframes slidedown {
+    0% {transform: translateY(-100%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slideupr {
+    0% {transform: translateY(100%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slidedownr {
+    0% {transform: translateY(0);opacity: 1;}
+    100% {transform: translateY(100%);opacity: 0;}
+}
+@keyframes slideright {
+    0% {transform: translateX(-100%);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes slideleft {
+    0% {transform: translateX(0);opacity: 1;}
+    100% {transform: translateX(-100%);opacity: 0;}
+}
+
+@keyframes growup {
+    0% {transform: scale(1);opacity: 1;}
+    100% {transform: scale(2);opacity: 0;}
+}
+@keyframes growdown {
+    0% {transform: scale(2);opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+
+@keyframes fadein {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fadeout {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

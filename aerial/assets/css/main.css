@@ -679,7 +679,11 @@
 				#header nav a span {
 					display: none;
 				}
-
+				#header nav a span:hover{
+					display: block;	
+				
+				}
+				
 /* Footer */
 
 	#footer {
@@ -690,7 +694,6 @@
 		bottom: 0;
 		cursor: default;
 		height: 6em;
-		left: 0;
 		line-height: 8em;
 		position: absolute;
 		text-align: center;

@@ -1062,6 +1062,19 @@
 		border-radius:3rem;
 	}
 	
+	#site_contenu {
+		
+		color: black;
+		/* overflow-y: scroll; */
+	}
+	
+	#historique {
+		
+		overflow-y: scroll;
+	}
+	
+	/* Ajout des polices directement dans le site */
+	
 	@font-face {
 		font-family: "Source Sans Pro";
 		src: url("../fonts/SourceSansPro-Regular.ttf") format("ttf");
@@ -1085,6 +1098,16 @@
 		font-weight: 900;
 		font-style: italic, oblique;
 }
+	@font-face {
+		font-family: "Source Sans Pro";
+		src: url("../fonts/SourceSansPro-Black.ttf") format("ttf");
+		font-weight: strong;
+}
+	@font-face {
+		font-family: "Source Sans Pro";
+		src: url("../fonts/SourceSansPro-BlackItalic.ttf") format("ttf");
+		font-weight: strong;
+		font-style: italic, oblique;
 
 	@font-face {
 		font-family: "Source Sans Pro";
